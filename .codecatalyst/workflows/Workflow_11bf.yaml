@@ -59,3 +59,20 @@ Actions:
     Configuration:
       # Required; type: string; description: Find this in your Mend account in the CI/CD Integration section
       MendLicenseKey: AIofzp\V9hqUzR[Y[JJZ7^[Yv9KYtZLXGh\gzN~hyRZg^ZY[xErXtRXWY=oP{8[W4pnQ^ZLR}MqRKhp]sN4en5[R}kphwh4]6lqQnNrW~M6Q9I~]~]oQ]FXR\Jq^WNX[q|qQ^p6fup4gwhZ[4^5en^rY]pZiohp[{Y~Zlp6htpIeW5[[u9oe^RXV:5IfeVpX4wKVSpq[}8YeWV5Xv94ZRtqWI=YfKt\[5o4VepKeYtpQRt\X~4IZSJXXxtJiFV4X5opQ^FXX}44hNVZXvt4Zep\VL5oQNp6XtxK[e|oW]tpi[9[W~p4USlqY}oZiRhp[stJVS|qV}8oiRVZ[v|qeRFXY\tZeSNnXsNJZ^pq[uppQVhZXutYfRp7eYp5QJNX[v9YfSp7eY=4eOVoXwNIVSh\VY9oiRt[[s9oQ^p6fupYh[NX]6NZQep\Sxp4gNpr]{Z~UeZrZ\N[hRlZ[s94QQ^7f:R6hWlI^ztYeTp6hxRqZe9q]K94Qop6htpIeet[[}Y4ZRpqUYtJfehYX|4IVTpqY}4YirtqX:hKVTxqY\tpiJh4X}wqeSp\YxNKf|4[X:^4Z^trWt=YeNlp[{t5ZlFXR\t5ewxK^5^JQnRnWH|IQ^VoX}IJZRN~eu9Iizt[W{]4Zlp6htpIh9MX[5VnQm^nV\NKeGZI^5^YfnFrW\pZezt[W:9I[lp6htp4hWtqYS9oQm^ZQvZ[Z9Qp[utI[o^rX[tJQwhY]~sYeTp[W\VqiOp\^yonWt9YQNt\ZNtYeTp6]LNKeOp\^
+  MendSCA_49_83:
+    Identifier: mend/mendsca@v1.0.9
+    Outputs:
+      Reports:
+        MendSCA:
+          Format: SARIFSCA
+          IncludePaths:
+            - report.sarif
+    Inputs:
+      Sources:
+        - WorkflowSource
+    Compute:
+      Type: EC2
+    Configuration:
+      MendLicenseKey: AIofzp\V9hqUzR[Y[JJZ7^[Yv9KYtZLXGh\gzN~hyRZg^ZY[xErXtRXWY=oP{8[W4pnQ^ZLR}MqRKhp]sN4en5[R}kphwh4]6lqQnNrW~M6Q9I~]~]oQ]FXR\Jq^WNX[q|qQ^p6fup4gwhZ[4^5en^rY]pZiohp[{Y~Zlp6htpIeW5[[u9oe^RXV:5IfeVpX4wKVSpq[}8YeWV5Xv94ZRtqWI=YfKt\[5o4VepKeYtpQRt\X~4IZSJXXxtJiFV4X5opQ^FXX}44hNVZXvt4Zep\VL5oQNp6XtxK[e|oW]tpi[9[W~p4USlqY}oZiRhp[stJVS|qV}8oiRVZ[v|qeRFXY\tZeSNnXsNJZ^pq[uppQVhZXutYfRp7eYp5QJNX[v9YfSp7eY=4eOVoXwNIVSh\VY9oiRt[[s9oQ^p6fupYh[NX]6NZQep\Sxp4gNpr]{Z~UeZrZ\N[hRlZ[s94QQ^7f:R6hWlI^ztYeTp6hxRqZe9q]K94Qop6htpIeet[[}Y4ZRpqUYtJfehYX|4IVTpqY}4YirtqX:hKVTxqY\tpiJh4X}wqeSp\YxNKf|4[X:^4Z^trWt=YeNlp[{t5ZlFXR\t5ewxK^5^JQnRnWH|IQ^VoX}IJZRN~eu9Iizt[W{]4Zlp6htpIh9MX[5VnQm^nV\NKeGZI^5^YfnFrW\pZezt[W:9I[lp6htp4hWtqYS9oQm^ZQvZ[Z9Qp[utI[o^rX[tJQwhY]~sYeTp[W\VqiOp\^yonWt9YQNt\ZNtYeTp6]LNKeOp\^
+    DependsOn:
+      - Build_c1
